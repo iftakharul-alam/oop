@@ -17,31 +17,26 @@
             return $this->account_number;
         }
 
-
         public function getOpenDate()
         {
             return $this->open_date;
         }
-
 
         public function getBalance()
         {
             return $this->balance;
         }
 
-
-
         function deposit($amount)
         {
             $this -> balance += $amount;
-            return "deposited";
+            echo "deposited";
         }
 
         function withdraw($amount)
         {
             $this -> balance -= $amount;
-            return "withdrawn";
+            echo "withdrawn";
         }
-
 
     }
